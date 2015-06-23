@@ -1,0 +1,80 @@
+C:\Users\Zach\Source\Workspaces\Advanced Accounting2\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\bin\Debug\Advanced Accounting Customer Tracker.exe.config
+C:\Users\Zach\Source\Workspaces\Advanced Accounting2\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\bin\Debug\Advanced Accounting Customer Tracker.exe
+C:\Users\Zach\Source\Workspaces\Advanced Accounting2\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\bin\Debug\Advanced Accounting Customer Tracker.pdb
+C:\Users\Zach\Source\Workspaces\Advanced Accounting2\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\bin\Debug\EntityFramework.dll
+C:\Users\Zach\Source\Workspaces\Advanced Accounting2\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Zach\Source\Workspaces\Advanced Accounting2\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\bin\Debug\EntityFramework.xml
+C:\Users\Zach\Source\Workspaces\Advanced Accounting2\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Zach\Source\Workspaces\Advanced Accounting2\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\obj\Debug\View\Customer Forms\AddCustomer.g.cs
+C:\Users\Zach\Source\Workspaces\Advanced Accounting2\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\obj\Debug\View\Customer Forms\EditCustomer.g.cs
+C:\Users\Zach\Source\Workspaces\Advanced Accounting2\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\obj\Debug\View\Customer Forms\RemoveCustomer.g.cs
+C:\Users\Zach\Source\Workspaces\Advanced Accounting2\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\obj\Debug\View\MainWindow.g.cs
+C:\Users\Zach\Source\Workspaces\Advanced Accounting2\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\obj\Debug\App.g.cs
+C:\Users\Zach\Source\Workspaces\Advanced Accounting2\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\obj\Debug\Advanced Accounting Customer Tracker_Content.g.cs
+C:\Users\Zach\Source\Workspaces\Advanced Accounting2\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Zach\Source\Workspaces\Advanced Accounting2\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\obj\Debug\Advanced Accounting Customer Tracker_MarkupCompile.cache
+C:\Users\Zach\Source\Workspaces\Advanced Accounting2\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\obj\Debug\Advanced Accounting Customer Tracker_MarkupCompile.lref
+C:\Users\Zach\Source\Workspaces\Advanced Accounting2\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\obj\Debug\View\Customer Forms\AddCustomer.baml
+C:\Users\Zach\Source\Workspaces\Advanced Accounting2\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\obj\Debug\View\Customer Forms\EditCustomer.baml
+C:\Users\Zach\Source\Workspaces\Advanced Accounting2\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\obj\Debug\View\Customer Forms\RemoveCustomer.baml
+C:\Users\Zach\Source\Workspaces\Advanced Accounting2\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\obj\Debug\View\MainWindow.baml
+C:\Users\Zach\Source\Workspaces\Advanced Accounting2\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\obj\Debug\Advanced Accounting Customer Tracker.g.resources
+C:\Users\Zach\Source\Workspaces\Advanced Accounting2\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\obj\Debug\Advanced_Accounting_Customer_Tracker.Properties.Resources.resources
+C:\Users\Zach\Source\Workspaces\Advanced Accounting2\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\obj\Debug\Advanced Accounting Customer Tracker.csproj.GenerateResource.Cache
+C:\Users\Zach\Source\Workspaces\Advanced Accounting2\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\obj\Debug\Advanced Accounting Customer Tracker.exe
+C:\Users\Zach\Source\Workspaces\Advanced Accounting2\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\obj\Debug\Advanced Accounting Customer Tracker.pdb
+C:\Users\Zach\Source\Workspaces\Advanced Accounting2\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\bin\Debug\Database.mdf
+C:\Users\Zach\Source\Workspaces\Advanced Accounting2\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\bin\Debug\Database_log.ldf
+C:\Users\Zach\Source\Workspaces\Advanced Accounting2\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\obj\Debug\View\Link Forms\Customer Service.baml
+C:\Users\Zach\Source\Workspaces\Advanced Accounting2\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\obj\Debug\View\Service Forms\Add Service.baml
+C:\Users\Zach\Source\Workspaces\Advanced Accounting2\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\obj\Debug\View\Service Forms\Edit Service.baml
+C:\Users\Zach\Source\Workspaces\Advanced Accounting2\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\obj\Debug\View\Service Forms\Remove Serivce.baml
+C:\Users\Zach\Source\Workspaces\Advanced Accounting2\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\obj\Debug\View\Link Forms\Customer Service.g.cs
+C:\Users\Zach\Source\Workspaces\Advanced Accounting2\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\obj\Debug\View\Service Forms\Add Service.g.cs
+C:\Users\Zach\Source\Workspaces\Advanced Accounting2\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\obj\Debug\View\Service Forms\Edit Service.g.cs
+C:\Users\Zach\Source\Workspaces\Advanced Accounting2\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\obj\Debug\View\Service Forms\Remove Serivce.g.cs
+C:\Users\Zach\Source\Workspaces\Advanced Accounting2\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\bin\Debug\Advanced Accounting Customer Tracker.exe.manifest
+C:\Users\Zach\Source\Workspaces\Advanced Accounting2\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\bin\Debug\Advanced Accounting Customer Tracker.application
+C:\Users\Zach\Source\Workspaces\Advanced Accounting2\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\obj\Debug\Advanced Accounting Customer Tracker.csprojResolveAssemblyReference.cache
+C:\Users\Zach\Source\Workspaces\Advanced Accounting2\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\obj\Debug\Advanced Accounting Customer Tracker.exe.manifest
+C:\Users\Zach\Source\Workspaces\Advanced Accounting2\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\obj\Debug\Advanced Accounting Customer Tracker.application
+C:\Users\Zach\Documents\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\bin\Debug\Database.mdf
+C:\Users\Zach\Documents\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\bin\Debug\Database_log.ldf
+C:\Users\Zach\Documents\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\bin\Debug\Advanced Accounting Customer Tracker.exe.config
+C:\Users\Zach\Documents\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\bin\Debug\Advanced Accounting Customer Tracker.exe.manifest
+C:\Users\Zach\Documents\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\bin\Debug\Advanced Accounting Customer Tracker.application
+C:\Users\Zach\Documents\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\bin\Debug\Advanced Accounting Customer Tracker.exe
+C:\Users\Zach\Documents\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\bin\Debug\Advanced Accounting Customer Tracker.pdb
+C:\Users\Zach\Documents\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\bin\Debug\EntityFramework.dll
+C:\Users\Zach\Documents\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Zach\Documents\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\bin\Debug\EntityFramework.xml
+C:\Users\Zach\Documents\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Zach\Documents\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\obj\Debug\View\Customer Forms\AddCustomer.g.cs
+C:\Users\Zach\Documents\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\obj\Debug\View\Customer Forms\EditCustomer.g.cs
+C:\Users\Zach\Documents\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\obj\Debug\View\Customer Forms\RemoveCustomer.g.cs
+C:\Users\Zach\Documents\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\obj\Debug\View\Link Forms\Customer Service.g.cs
+C:\Users\Zach\Documents\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\obj\Debug\View\MainWindow.g.cs
+C:\Users\Zach\Documents\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\obj\Debug\View\Service Forms\Add Service.g.cs
+C:\Users\Zach\Documents\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\obj\Debug\View\Service Forms\Edit Service.g.cs
+C:\Users\Zach\Documents\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\obj\Debug\View\Service Forms\Remove Serivce.g.cs
+C:\Users\Zach\Documents\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\obj\Debug\App.g.cs
+C:\Users\Zach\Documents\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\obj\Debug\Advanced Accounting Customer Tracker_Content.g.cs
+C:\Users\Zach\Documents\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Zach\Documents\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\obj\Debug\Advanced Accounting Customer Tracker_MarkupCompile.cache
+C:\Users\Zach\Documents\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\obj\Debug\Advanced Accounting Customer Tracker_MarkupCompile.lref
+C:\Users\Zach\Documents\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\obj\Debug\View\Customer Forms\AddCustomer.baml
+C:\Users\Zach\Documents\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\obj\Debug\View\Customer Forms\EditCustomer.baml
+C:\Users\Zach\Documents\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\obj\Debug\View\Customer Forms\RemoveCustomer.baml
+C:\Users\Zach\Documents\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\obj\Debug\View\Link Forms\Customer Service.baml
+C:\Users\Zach\Documents\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\obj\Debug\View\MainWindow.baml
+C:\Users\Zach\Documents\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\obj\Debug\View\Service Forms\Add Service.baml
+C:\Users\Zach\Documents\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\obj\Debug\View\Service Forms\Edit Service.baml
+C:\Users\Zach\Documents\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\obj\Debug\View\Service Forms\Remove Serivce.baml
+C:\Users\Zach\Documents\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\obj\Debug\Advanced Accounting Customer Tracker.g.resources
+C:\Users\Zach\Documents\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\obj\Debug\Advanced_Accounting_Customer_Tracker.Properties.Resources.resources
+C:\Users\Zach\Documents\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\obj\Debug\Advanced Accounting Customer Tracker.csproj.GenerateResource.Cache
+C:\Users\Zach\Documents\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\obj\Debug\Advanced Accounting Customer Tracker.exe.manifest
+C:\Users\Zach\Documents\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\obj\Debug\Advanced Accounting Customer Tracker.application
+C:\Users\Zach\Documents\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\obj\Debug\Advanced Accounting Customer Tracker.exe
+C:\Users\Zach\Documents\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\obj\Debug\Advanced Accounting Customer Tracker.pdb
+C:\Users\Zach\Documents\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\obj\Debug\Advanced Accounting Customer Tracker.csprojResolveAssemblyReference.cache

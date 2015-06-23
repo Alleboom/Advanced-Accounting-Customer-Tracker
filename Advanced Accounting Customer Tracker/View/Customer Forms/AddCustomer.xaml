@@ -1,0 +1,26 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Customer_View_Models="clr-namespace:Advanced_Accounting_Customer_Tracker.ViewModel.Customer_View_Models" x:Class="Advanced_Accounting_Customer_Tracker.View.Customer_Forms.AddCustomer"
+        Title="Add Customer" Height="Auto" Width="300" SizeToContent="Height">
+    <Grid>
+
+        <StackPanel Height="Auto" Margin="5">
+            <Label Content="Name:" />
+            <TextBox Text="{Binding NewName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+            <Label Content="Address:" />
+            <TextBox Text="{Binding NewAddress, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+            <Label Content="Phone Number:" />
+            <TextBox Text="{Binding NewPhoneNumber, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+            <Label Content="Cell Number:" />
+            <TextBox Text="{Binding NewCellNumber, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+            <Label Content="Email:" />
+            <TextBox Text="{Binding NewEmail, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+            <Label Content="Tax Form:" />
+            <TextBox Text="{Binding NewTaxForm, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+            <Label Content="Accounting Method:" />
+            <TextBox Text="{Binding NewAccountingMethod, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+            <Button Content="Save" Margin="0,5,0,0" Command="{Binding Save}" CommandParameter=""/>
+        </StackPanel>
+    </Grid>
+</Window>
