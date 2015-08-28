@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="DataModelStoreContainer" CdmEntityContainer="DataModelContext">
+  <EntityContainerMapping StorageEntityContainer="DatabaseModelStoreContainer" CdmEntityContainer="DataModelContext">
     <EntitySetMapping Name="Customers">
-      <EntityTypeMapping TypeName="IsTypeOf(DataModel.Customer)">
+      <EntityTypeMapping TypeName="DatabaseModel.Customer">
         <MappingFragment StoreEntitySet="Customers">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Name" ColumnName="Name" />
@@ -16,11 +16,11 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="CustomerServiceAssociatives">
-      <EntityTypeMapping TypeName="IsTypeOf(DataModel.CustomerServiceAssociative)">
+      <EntityTypeMapping TypeName="DatabaseModel.CustomerServiceAssociative">
         <MappingFragment StoreEntitySet="CustomerServiceAssociatives">
-          <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="ServiceID" ColumnName="ServiceID" />
           <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Performed" ColumnName="Performed" />
           <ScalarProperty Name="DueDate" ColumnName="DueDate" />
           <ScalarProperty Name="Frequency" ColumnName="Frequency" />
@@ -29,7 +29,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Services">
-      <EntityTypeMapping TypeName="IsTypeOf(DataModel.Service)">
+      <EntityTypeMapping TypeName="DatabaseModel.Service">
         <MappingFragment StoreEntitySet="Services">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Name" ColumnName="Name" />

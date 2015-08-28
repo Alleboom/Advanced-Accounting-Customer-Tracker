@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Advanced_Accounting_Customer_Tracker.ViewModel.Service_View_Models
 {
-    public class Remove_Service_View_Model : Base_Service_View_Model
+    public class Remove_Service_View_Model : VMBase
     {
 
         public RelayCommand Remove { get; set; }
@@ -29,7 +29,7 @@ namespace Advanced_Accounting_Customer_Tracker.ViewModel.Service_View_Models
         {
             try
             {
-                using (var db = new DataModelContext())
+                using (var db = new DataModel())
                 {
                     db.Services.Attach(SelectedService);
                     db.Services.Remove(SelectedService);

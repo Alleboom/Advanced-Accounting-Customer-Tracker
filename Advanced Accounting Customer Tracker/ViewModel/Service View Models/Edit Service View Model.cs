@@ -15,12 +15,17 @@ namespace Advanced_Accounting_Customer_Tracker.ViewModel.Service_View_Models
         public Helpers.RelayCommand Save { get; set; }
         
 
+        /// <summary>
+        /// Default constructor, creates a new RelayCommand
+        /// </summary>
         public Edit_Service_View_Model()
         {
             Save = new Helpers.RelayCommand(SaveChangesToDB, ChangesMade);
         }
 
-
+        /// <summary>
+        /// The selected service to be modified.
+        /// </summary>
         public Service SelectedService
         {
             get
@@ -40,6 +45,12 @@ namespace Advanced_Accounting_Customer_Tracker.ViewModel.Service_View_Models
             }
         }
 
+
+        /// <summary>
+        /// Checks for any changes made between the selected services and the controls present on the form
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns>True for changes, False for equal values</returns>
         private bool ChangesMade(object obj)
         {
             if (SelectedService != null)
@@ -52,11 +63,16 @@ namespace Advanced_Accounting_Customer_Tracker.ViewModel.Service_View_Models
             }
         }
 
+
+        /// <summary>
+        /// Saves the changes made to the service to the database
+        /// </summary>
+        /// <param name="obj"></param>
         private void SaveChangesToDB(object obj)
         {
             try
             {
-                using (var db = new DataModelContext())
+                using (var db = new DataModel())
                 {
                     SelectedService.Name = NewName;
                     SelectedService.Description = NewDescription;                    
@@ -70,6 +86,10 @@ namespace Advanced_Accounting_Customer_Tracker.ViewModel.Service_View_Models
             catch ( Exception ex)
             {
                 System.Windows.Forms.MessageBox.Show(ex.Message);
+                using (System.IO.TextWriter log = new System.IO.StreamWriter("log.txt"))
+                {
+                    log.WriteLine(ex.Message + " " + System.DateTime.Today.ToString());
+                }
             }
         }
 

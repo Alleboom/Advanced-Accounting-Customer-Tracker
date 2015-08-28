@@ -16,28 +16,38 @@ namespace Advanced_Accounting_Customer_Tracker.ViewModel.Customer_View_Models
             Save = new Helpers.RelayCommand(SaveToDb, PropertiesChanged);
         }
 
+        /// <summary>
+        /// Lets us know if any of the customers properties in the view have changed
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns>True if controls have different values than the original object</returns>
         private bool PropertiesChanged(object obj)
         {
             //check to see if properties have changed
             if (_SelectedCustomer != null){
-                return (NewAccountingMethod != _SelectedCustomer.Accounting_Method ||
+                return ((NewAccountingMethod != _SelectedCustomer.Accounting_Method ||
                     NewAddress != _SelectedCustomer.Address ||
                     NewCellNumber != _SelectedCustomer.Cell_Phone_Number ||
                     NewEmail != _SelectedCustomer.Email ||
                     NewName != _SelectedCustomer.Name ||
                     NewPhoneNumber != _SelectedCustomer.Phone_Number ||
-                    NewTaxForm != _SelectedCustomer.Tax_Form);
+                    NewTaxForm != _SelectedCustomer.Tax_Form ) &&
+                    _SelectedCustomer != null);
             }
             else{
                 return false;
             }
         }
 
+        /// <summary>
+        /// Saves the selected customer back to the database with the changes made to the control
+        /// </summary>
+        /// <param name="obj"></param>
         private void SaveToDb(object obj)
         {
             try
             {
-                using (var db = new DataModelContext())
+                using (var db = new DataModel())
                 {
 
                     SelectedCustomer.Accounting_Method = NewAccountingMethod;
@@ -59,6 +69,10 @@ namespace Advanced_Accounting_Customer_Tracker.ViewModel.Customer_View_Models
             }
         }
 
+        /// <summary>
+        /// Changes the values in the control to the values of the 
+        /// selected customer and updates our pointer to that customer object
+        /// </summary>
         public new Customer SelectedCustomer
         {
             get

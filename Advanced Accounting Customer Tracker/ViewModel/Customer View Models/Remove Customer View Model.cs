@@ -25,7 +25,7 @@ namespace Advanced_Accounting_Customer_Tracker.ViewModel.Customer_View_Models
         {
             try
             {
-                using (var db = new DataModelContext())
+                using (var db = new DataModel())
                 {
                     db.Customers.Attach(SelectedCustomer);
                     db.Customers.Remove(SelectedCustomer);

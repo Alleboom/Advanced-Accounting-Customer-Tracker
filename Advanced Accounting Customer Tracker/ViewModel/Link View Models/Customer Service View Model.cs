@@ -195,7 +195,7 @@ namespace Advanced_Accounting_Customer_Tracker.ViewModel.Link_View_Models
         {
             try
             {
-                using (var db = new DataModelContext())
+                using (var db = new DataModel())
                 {
                     // clear the customerServiceAssociatves table
                     //SelectedCustomer.CustomerServiceAssociatives.Clear();
@@ -299,7 +299,7 @@ namespace Advanced_Accounting_Customer_Tracker.ViewModel.Link_View_Models
             try
             {
                 // get each service and assign to appropriate list
-                using (var db = new DataModelContext())
+                using (var db = new DataModel())
                 {
 
                         foreach (var customerservice in db.CustomerServiceAssociatives)

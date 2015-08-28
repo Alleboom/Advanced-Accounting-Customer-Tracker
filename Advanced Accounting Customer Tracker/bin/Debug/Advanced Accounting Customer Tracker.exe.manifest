@@ -49,7 +49,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>KCpZyazJqMbq8Iyx5omzz9E9HswQfHLHyAuTsxzRoO8=</dsig:DigestValue>
+        <dsig:DigestValue>tfYvPxm0IsiaAfMAACS9bZ2stYvn0us/6NVV6HKOwPk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -77,40 +77,40 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="Advanced Accounting Customer Tracker.exe.config" size="1438">
+  <file name="Advanced Accounting Customer Tracker.exe.config" size="1867">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>NlNVT7mqKEdbpvRxh80/Z/R9vLhntfexKVRZ0aQfjV0=</dsig:DigestValue>
+      <dsig:DigestValue>EAl6Rbn47cMpnB5ejO7Fk/jsHwuPhogb2f958urEGPE=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Database.mdf" size="3211264" writeableType="applicationData">
+  <file name="Model.Context.tt" size="22929">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>T4j4onCV3r8BTf2Wwx1BA8LA38A7JJFVLHVRgeiEvYw=</dsig:DigestValue>
+      <dsig:DigestValue>J2TH+QHRSBRGLZojTXWg+B6PuAIDz7vUuiHZ/YvndzI=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Database_log.ldf" size="802816" writeableType="applicationData">
+  <file name="Model.edmx.sql" size="4641">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>677hJNQeucv/MKiuPWY6WrDuw7wzlppOH4pgeQIZPuc=</dsig:DigestValue>
+      <dsig:DigestValue>Sly1/EkBGBXy4BqWXIOwZv4C/cfTEKvbP31z/SRjHB8=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="DataModel.edmx.sql" size="4465">
+  <file name="Model.tt" size="25274">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>SNCjQglIXEG1Cpc5kl7ATshs9/OFxUabP0cM/oc+ZN0=</dsig:DigestValue>
+      <dsig:DigestValue>onO2Ot1iK1V64VOsaY3q1ridq8xs86Uq5kgcZvZpQx4=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

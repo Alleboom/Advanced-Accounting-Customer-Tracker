@@ -14,13 +14,13 @@ namespace Advanced_Accounting_Customer_Tracker
     
     public partial class CustomerServiceAssociative
     {
-        public int ServiceID { get; set; }
-        public int CustomerID { get; set; }
         public int Id { get; set; }
-        public Nullable<bool> Performed { get; set; }
-        public Nullable<System.DateTime> DueDate { get; set; }
+        public string Performed { get; set; }
+        public string DueDate { get; set; }
         public string Frequency { get; set; }
-        public Nullable<bool> Reminder { get; set; }
+        public string Reminder { get; set; }
+        public int CustomerID { get; set; }
+        public int ServiceID { get; set; }
     
         public virtual Customer Customer { get; set; }
         public virtual Service Service { get; set; }

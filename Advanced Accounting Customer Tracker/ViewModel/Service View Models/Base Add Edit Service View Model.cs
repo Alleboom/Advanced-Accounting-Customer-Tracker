@@ -11,6 +11,8 @@ namespace Advanced_Accounting_Customer_Tracker.ViewModel.Service_View_Models
 
         private String _newName, _newDescription;
 
+
+
         /// <summary>
         /// The new name to copy over into the db
         /// </summary>

@@ -2,13 +2,13 @@
 -- --------------------------------------------------
 -- Entity Designer DDL Script for SQL Server 2005, 2008, 2012 and Azure
 -- --------------------------------------------------
--- Date Created: 06/04/2015 09:04:55
--- Generated from EDMX file: C:\Users\Zach\Source\Workspaces\Advanced Accounting2\Advanced Accounting Customer Tracker\Advanced Accounting Customer Tracker\DataModel.edmx
+-- Date Created: 08/28/2015 14:33:29
+-- Generated from EDMX file: C:\Users\Zach\Documents\GitHub\Advanced-Accounting-Customer-Tracker\Advanced Accounting Customer Tracker\Model.edmx
 -- --------------------------------------------------
 
 SET QUOTED_IDENTIFIER OFF;
 GO
-USE [Database];
+USE [Data];
 GO
 IF SCHEMA_ID(N'dbo') IS NULL EXECUTE(N'CREATE SCHEMA [dbo]');
 GO
@@ -17,11 +17,11 @@ GO
 -- Dropping existing FOREIGN KEY constraints
 -- --------------------------------------------------
 
-IF OBJECT_ID(N'[dbo].[FK_Customer_Service]', 'F') IS NOT NULL
-    ALTER TABLE [dbo].[CustomerServiceAssociatives] DROP CONSTRAINT [FK_Customer_Service];
+IF OBJECT_ID(N'[dbo].[FK_CustomerCustomerServiceAssociative]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[CustomerServiceAssociatives] DROP CONSTRAINT [FK_CustomerCustomerServiceAssociative];
 GO
-IF OBJECT_ID(N'[dbo].[FK_Service_Customer]', 'F') IS NOT NULL
-    ALTER TABLE [dbo].[CustomerServiceAssociatives] DROP CONSTRAINT [FK_Service_Customer];
+IF OBJECT_ID(N'[dbo].[FK_ServiceCustomerServiceAssociative]', 'F') IS NOT NULL
+    ALTER TABLE [dbo].[CustomerServiceAssociatives] DROP CONSTRAINT [FK_ServiceCustomerServiceAssociative];
 GO
 
 -- --------------------------------------------------
@@ -45,33 +45,33 @@ GO
 -- Creating table 'Customers'
 CREATE TABLE [dbo].[Customers] (
     [Id] int IDENTITY(1,1) NOT NULL,
-    [Name] varchar(max)  NOT NULL,
-    [Phone_Number] varchar(max)  NULL,
-    [Cell_Phone_Number] varchar(max)  NULL,
-    [Email] varchar(max)  NULL,
-    [Tax_Form] varchar(max)  NULL,
-    [Accounting_Method] varchar(max)  NULL,
-    [Address] varchar(max)  NULL
+    [Name] nvarchar(max)  NOT NULL,
+    [Phone_Number] nvarchar(max)  NULL,
+    [Cell_Phone_Number] nvarchar(max)  NULL,
+    [Email] nvarchar(max)  NULL,
+    [Tax_Form] nvarchar(max)  NULL,
+    [Accounting_Method] nvarchar(max)  NULL,
+    [Address] nvarchar(max)  NULL
 );
 GO
 
 -- Creating table 'CustomerServiceAssociatives'
 CREATE TABLE [dbo].[CustomerServiceAssociatives] (
-    [ServiceID] int  NOT NULL,
-    [CustomerID] int  NOT NULL,
     [Id] int IDENTITY(1,1) NOT NULL,
-    [Performed] bit  NULL,
-    [DueDate] datetime  NULL,
-    [Frequency] varchar(max)  NULL,
-    [Reminder] bit  NULL
+    [Performed] nvarchar(max)  NULL,
+    [DueDate] nvarchar(max)  NULL,
+    [Frequency] nvarchar(max)  NULL,
+    [Reminder] nvarchar(max)  NULL,
+    [CustomerID] int  NOT NULL,
+    [ServiceID] int  NOT NULL
 );
 GO
 
 -- Creating table 'Services'
 CREATE TABLE [dbo].[Services] (
     [Id] int IDENTITY(1,1) NOT NULL,
-    [Name] varchar(max)  NOT NULL,
-    [Description] varchar(max)  NOT NULL
+    [Name] nvarchar(max)  NULL,
+    [Description] nvarchar(max)  NULL
 );
 GO
 
@@ -103,30 +103,30 @@ GO
 
 -- Creating foreign key on [CustomerID] in table 'CustomerServiceAssociatives'
 ALTER TABLE [dbo].[CustomerServiceAssociatives]
-ADD CONSTRAINT [FK_Customer_Service]
+ADD CONSTRAINT [FK_CustomerCustomerServiceAssociative]
     FOREIGN KEY ([CustomerID])
     REFERENCES [dbo].[Customers]
         ([Id])
-    ON DELETE CASCADE ON UPDATE NO ACTION;
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
 GO
 
--- Creating non-clustered index for FOREIGN KEY 'FK_Customer_Service'
-CREATE INDEX [IX_FK_Customer_Service]
+-- Creating non-clustered index for FOREIGN KEY 'FK_CustomerCustomerServiceAssociative'
+CREATE INDEX [IX_FK_CustomerCustomerServiceAssociative]
 ON [dbo].[CustomerServiceAssociatives]
     ([CustomerID]);
 GO
 
 -- Creating foreign key on [ServiceID] in table 'CustomerServiceAssociatives'
 ALTER TABLE [dbo].[CustomerServiceAssociatives]
-ADD CONSTRAINT [FK_Service_Customer]
+ADD CONSTRAINT [FK_ServiceCustomerServiceAssociative]
     FOREIGN KEY ([ServiceID])
     REFERENCES [dbo].[Services]
         ([Id])
-    ON DELETE CASCADE ON UPDATE NO ACTION;
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
 GO
 
--- Creating non-clustered index for FOREIGN KEY 'FK_Service_Customer'
-CREATE INDEX [IX_FK_Service_Customer]
+-- Creating non-clustered index for FOREIGN KEY 'FK_ServiceCustomerServiceAssociative'
+CREATE INDEX [IX_FK_ServiceCustomerServiceAssociative]
 ON [dbo].[CustomerServiceAssociatives]
     ([ServiceID]);
 GO

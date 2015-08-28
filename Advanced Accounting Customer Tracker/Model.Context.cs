@@ -13,10 +13,10 @@ namespace Advanced_Accounting_Customer_Tracker
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class DataModelContext : DbContext
+    public partial class DataModel : DbContext
     {
-        public DataModelContext()
-            : base("name=DataModelContext")
+        public DataModel()
+            : base("name=DataModel")
         {
         }
     

@@ -25,10 +25,11 @@ namespace Advanced_Accounting_Customer_Tracker.ViewModel.Customer_View_Models
         {
             try
             {
-                using (var db = new DataModelContext())
+                using (var db = new DataModel())
                 {
                     db.Database.Log = Console.WriteLine;
-                    db.Customers.Add(new Customer()
+
+                    Customer newcust = new Customer()
                     {
                         Name = NewName,
                         Accounting_Method = NewAccountingMethod,
@@ -37,7 +38,15 @@ namespace Advanced_Accounting_Customer_Tracker.ViewModel.Customer_View_Models
                         Email = NewEmail,
                         Phone_Number = NewPhoneNumber,
                         Tax_Form = NewTaxForm,
-                    });
+                    };
+
+                    //db.Customers.Add(newcust);
+                    //db.Customers.Attach(newcust);
+                    //db.Entry(newcust).State = System.Data.Entity.EntityState.Added;
+
+
+                    db.Customers.Add(newcust);
+
 
                     db.SaveChanges();
 
