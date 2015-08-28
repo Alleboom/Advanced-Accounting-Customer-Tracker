@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="Model" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="DataModel" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Customers" EntityType="Model.Customer" />
+    <EntitySet Name="CustomerServiceAssociatives" EntityType="Model.CustomerServiceAssociative" />
+    <EntitySet Name="Services" EntityType="Model.Service" />
+    <AssociationSet Name="CustomerCustomerServiceAssociative" Association="Model.CustomerCustomerServiceAssociative">
+      <End Role="Customer" EntitySet="Customers" />
+      <End Role="CustomerServiceAssociative" EntitySet="CustomerServiceAssociatives" />
+    </AssociationSet>
+    <AssociationSet Name="ServiceCustomerServiceAssociative" Association="Model.ServiceCustomerServiceAssociative">
+      <End Role="Service" EntitySet="Services" />
+      <End Role="CustomerServiceAssociative" EntitySet="CustomerServiceAssociatives" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Customer">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" />
+    <Property Name="Phone_Number" Type="String" Nullable="true" />
+    <Property Name="Cell_Phone_Number" Type="String" Nullable="true" />
+    <Property Name="Email" Type="String" Nullable="true" />
+    <Property Name="Tax_Form" Type="String" Nullable="true" />
+    <Property Name="Accounting_Method" Type="String" Nullable="true" />
+    <Property Name="Address" Type="String" Nullable="true" />
+    <NavigationProperty Name="CustomerServiceAssociatives" Relationship="Model.CustomerCustomerServiceAssociative" FromRole="Customer" ToRole="CustomerServiceAssociative" />
+  </EntityType>
+  <EntityType Name="CustomerServiceAssociative">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Performed" Type="String" Nullable="true" />
+    <Property Name="DueDate" Type="String" Nullable="true" />
+    <Property Name="Frequency" Type="String" Nullable="true" />
+    <Property Name="Reminder" Type="String" Nullable="true" />
+    <NavigationProperty Name="Customer" Relationship="Model.CustomerCustomerServiceAssociative" FromRole="CustomerServiceAssociative" ToRole="Customer" />
+    <Property Name="CustomerID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Service" Relationship="Model.ServiceCustomerServiceAssociative" FromRole="CustomerServiceAssociative" ToRole="Service" />
+    <Property Name="ServiceID" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Service">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="true" />
+    <Property Name="Description" Type="String" Nullable="true" />
+    <NavigationProperty Name="CustomerServiceAssociatives" Relationship="Model.ServiceCustomerServiceAssociative" FromRole="Service" ToRole="CustomerServiceAssociative" />
+  </EntityType>
+  <Association Name="CustomerCustomerServiceAssociative">
+    <End Type="Model.Customer" Role="Customer" Multiplicity="1" />
+    <End Type="Model.CustomerServiceAssociative" Role="CustomerServiceAssociative" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CustomerServiceAssociative">
+        <PropertyRef Name="CustomerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ServiceCustomerServiceAssociative">
+    <End Type="Model.Service" Role="Service" Multiplicity="1" />
+    <End Type="Model.CustomerServiceAssociative" Role="CustomerServiceAssociative" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Service">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CustomerServiceAssociative">
+        <PropertyRef Name="ServiceID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

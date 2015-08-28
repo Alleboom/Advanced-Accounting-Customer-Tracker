@@ -7,14 +7,14 @@
     <framework targetVersion="4.5" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="Advanced Accounting Customer Tracker.exe.manifest" size="6263">
+    <dependentAssembly dependencyType="install" codebase="Advanced Accounting Customer Tracker.exe.manifest" size="6188">
       <assemblyIdentity name="Advanced Accounting Customer Tracker.exe" version="1.0.0.4" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>AVa/PVlnpgFDQyoAdpFbPRvhdDjX9EwidenqieKF5Pc=</dsig:DigestValue>
+        <dsig:DigestValue>UGHPm0sb2q99Lv8vBQFl78O5nWXh6Rr3Y82PO4sjGKY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

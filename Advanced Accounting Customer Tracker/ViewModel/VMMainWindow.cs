@@ -11,18 +11,25 @@ namespace Advanced_Accounting_Customer_Tracker.ViewModel
 {
     public class VMMainWindow : VMBase
     {
+        /// <summary>
+        /// Default constructor
+        /// </summary>
         public VMMainWindow()
         {   
             OpenWindow = new Helpers.RelayCommand(Open);
-            EveryCustomer = null;
             Filters = new ObservableCollection<string>();
+            EveryCustomer = null;
+            EveryService = null;
             Filters.Add("Customer");
             Filters.Add("Service");
             FilterIsCustomer = false;
+            
+
+            
         }
         
         #region Member Variables
-        private ObservableCollection<object> _LeftList = new ObservableCollection<object>();
+        private ObservableCollection<object> _LeftList = new ObservableCollection<object>(); 
         private ObservableCollection<object> _RightList = new ObservableCollection<object>();
         private String _SelectedFilter;
         private object _SelectLeft;
@@ -35,6 +42,10 @@ namespace Advanced_Accounting_Customer_Tracker.ViewModel
 
         #region Properties
 
+
+        /// <summary>
+        /// Returns true of the filter applied from the combo box is a customer
+        /// </summary>
         public bool FilterIsCustomer
         {
             get
@@ -51,6 +62,9 @@ namespace Advanced_Accounting_Customer_Tracker.ViewModel
             }
         }
 
+        /// <summary>
+        /// Returns true if the filter applied is a customer
+        /// </summary>
         public bool FilterIsService
         {
             get
@@ -67,6 +81,10 @@ namespace Advanced_Accounting_Customer_Tracker.ViewModel
             }
         }
 
+        /// <summary>
+        /// The accounting mehod of the customer.
+        /// Only shows when a customer filter is selected.
+        /// </summary>
         public String AccountingMethod
         {
             get
@@ -97,15 +115,17 @@ namespace Advanced_Accounting_Customer_Tracker.ViewModel
             {
                 _SelectLeft = value;
                 OnPropertyChanged("SelectedLeft");
-                using (var db = new DataModelContext())
+                using (var db = new DataModel())
                 {
                     // generate a list of services based off the customer, we know its a customer because the filter is a customer
                     if (SelectedFilter == "Customer")
                     {
+                        // clear the list on the right and populate it with services
                         RightList.Clear();
                         Customer cust = (Customer)value;
                         ObservableCollection<Service> services = new ObservableCollection<Service>();
 
+                        // populate the right list with all the services tied to that customer
                         foreach (var item in db.CustomerServiceAssociatives)
                         {
                             if (item.CustomerID == cust.Id)
@@ -114,19 +134,29 @@ namespace Advanced_Accounting_Customer_Tracker.ViewModel
                             }
                         }
 
+                        // populate the right list with services
                         foreach (var item in services)
                         {
                             RightList.Add(item);
                         }
-                        AccountingMethod = cust.Accounting_Method;
+
+                        // Apply the Accounting method of the customer to the 
+                        // View Models Accounting method if we have a customer selected
+                        if (cust != null)
+                        {
+                            AccountingMethod = cust.Accounting_Method;
+                        }
                     }
 
-                    if (SelectedFilter == "Service")
-                    {
+                    // Show servies on the left and show which customer has them on the right
+                    if (SelectedFilter == "Service") { 
+                    
+                        // Clear the right list
                         RightList.Clear();
                         Service serv = (Service)value;
                         ObservableCollection<Customer> customers = new ObservableCollection<Customer>();
 
+                        // check for each service attached to that customer
                         foreach (var item in db.CustomerServiceAssociatives)
                         {
                             if (item.ServiceID == serv.Id)
@@ -135,6 +165,7 @@ namespace Advanced_Accounting_Customer_Tracker.ViewModel
                             }
                         }
 
+                        // populate the right list with customers
                         foreach (var item in customers)
                         {
                             RightList.Add(item);
@@ -227,6 +258,12 @@ namespace Advanced_Accounting_Customer_Tracker.ViewModel
         #endregion
 
         #region Methods
+
+        /// <summary>
+        /// Updates the left, right list and the filter
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void UpdateFields(object sender, EventArgs e)
         {
             EveryCustomer = null;
@@ -234,6 +271,10 @@ namespace Advanced_Accounting_Customer_Tracker.ViewModel
             SelectedFilter = _SelectedFilter;
         }
 
+        /// <summary>
+        /// Handles opening a new window based off of the parameter passed in
+        /// </summary>
+        /// <param name="param">A String object that tell us which window to open</param>
         public void Open(object param)
         {
             switch ((String)param)

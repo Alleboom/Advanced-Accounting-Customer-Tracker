@@ -14,6 +14,7 @@ namespace Advanced_Accounting_Customer_Tracker
     
     public partial class Customer
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Customer()
         {
             this.CustomerServiceAssociatives = new HashSet<CustomerServiceAssociative>();
@@ -28,6 +29,7 @@ namespace Advanced_Accounting_Customer_Tracker
         public string Accounting_Method { get; set; }
         public string Address { get; set; }
     
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CustomerServiceAssociative> CustomerServiceAssociatives { get; set; }
     }
 }

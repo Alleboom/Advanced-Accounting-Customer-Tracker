@@ -10,9 +10,6 @@ namespace Advanced_Accounting_Customer_Tracker.ViewModel
 {
     abstract public class VMBase : INotifyPropertyChanged
     {
-
-
-
         public event PropertyChangedEventHandler PropertyChanged;
         public Action CloseAction { get; set; }
 
@@ -30,17 +27,26 @@ namespace Advanced_Accounting_Customer_Tracker.ViewModel
         /// </summary>
         public ObservableCollection<Customer> EveryCustomer
         {
+            
             get
             {
+                
                 var list = new ObservableCollection<Customer>();
-                using (var db = new DataModelContext())
-                {
-                    foreach (var item in db.Customers)
+                try {
+                    using (var db = new DataModel())
                     {
-                        list.Add(item);
+                        foreach (var item in db.Customers)
+                        {
+                            list.Add(item);
+                        }
                     }
+                }catch(Exception e)
+                {
+                    System.Windows.Forms.MessageBox.Show(e.Message);
                 }
+
                 return list;
+                
             }
 
             set
@@ -54,12 +60,18 @@ namespace Advanced_Accounting_Customer_Tracker.ViewModel
             get
             {
                 var list = new ObservableCollection<Service>();
-                using (var db = new DataModelContext())
-                {
-                    foreach (var item in db.Services)
+                try {
+                    using (var db = new DataModel())
                     {
-                        list.Add(item);
+                        foreach (var item in db.Services)
+                        {
+                            list.Add(item);
+                        }
                     }
+                }
+                catch(Exception e)
+                {
+                    System.Windows.Forms.MessageBox.Show(e.Message);
                 }
                 return list;
             }
